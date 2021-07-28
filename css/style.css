@@ -137,12 +137,22 @@ a {
 /* Hero */
 .hero {
   max-width: 1600px;
+  min-height: 600px;
   background-color: #2f303a;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   font-weight: 900;
@@ -176,6 +186,42 @@ a {
 }
 
 /* Features */
+
+.features-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: #f5f4fa;
+  margin-bottom: 30px;
+}
+
+.icon-sputnik::before {
+  background-image: url(../image/иконки\ svg/sput.tar.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-clock::before {
+  background-image: url(../image/иконки\ svg/clockoff.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-comp::before {
+  background-image: url(../image/иконки\ svg/comp.graf.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-astronaut::before {
+  background-image: url(../image/иконки\ svg/astronaut.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .features {
   display: flex;
   /* justify-content: center; */
@@ -290,6 +336,7 @@ a {
 }
 
 .filter-button {
+  border: transparent;
   background: #f5f4fa;
   padding: 6px 22px;
   border-radius: 4px;
@@ -349,10 +396,6 @@ img {
   display: block;
 }
 
-.portfolio-text {
-  margin-top: 4px;
-}
-
 .portfolio-title {
   margin-bottom: 4px;
   font-weight: bold;
@@ -376,7 +419,7 @@ img {
 }
 
 .website {
-  /* margin-bottom: 20px; */
+  margin-bottom: 20px;
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
@@ -395,6 +438,10 @@ img {
   color: var(--accent-text-color);
 }
 
+.address {
+  margin-top: 20px;
+}
+
 .footer-address {
   margin-bottom: 9px;
   font-size: 14px;
@@ -403,7 +450,6 @@ img {
 }
 
 .footer-main {
-  margin-top: 20px;
   font-style: normal;
 }
 
