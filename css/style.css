@@ -520,7 +520,7 @@ img {
 }
 
 .website {
-  position: absolute;
+  /* position: absolute; */
   margin-bottom: 20px;
   font-family: Raleway;
   font-weight: bold;
@@ -539,7 +539,7 @@ img {
 }
 
 .address {
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: auto;
 }
 
@@ -565,6 +565,7 @@ img {
 }
 
 .join-container {
+  width: 206px;
   margin-left: 70px;
 
   /* justify-content: space-between;
