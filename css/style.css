@@ -367,10 +367,11 @@ a {
 .team-social-link:hover,
 .team-social-link:focus {
   background-color: var(--accent-text-color);
+  fill: #ffffff;
 }
 
 .team-social-link:hover .icon-link-team,
-.team-social-link:hover .icon-link-team {
+.team-social-link:focus .icon-link-team {
   fill: white;
 }
 
