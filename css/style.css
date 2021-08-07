@@ -4,6 +4,7 @@
   --accent-text-color: #2196f3;
   --filter-button-color: #f5f4fa;
   --s-v-g: #afb1b8;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -110,7 +111,22 @@ a {
 }
 
 .current {
+  position: relative;
+  display: block;
   color: var(--accent-text-color);
+}
+
+.current::after {
+  content: "";
+
+  position: absolute;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--accent-text-color);
+  bottom: 0;
 }
 
 /* Contacts */
@@ -494,6 +510,44 @@ img {
 .portfolio > .portfolio-item {
   margin-left: 30px;
   margin-top: 30px;
+}
+
+.portfolio-thumb {
+  position: relative;
+}
+
+.portfolio-thumb::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.img-overlay {
+  display: block;
+  content: "";
+
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 28px;
+  background: rgba(33, 150, 243, 0.9);
+  color: #ffffff;
+
+  width: 370px;
+  height: 294px;
+  padding: 63px 24px;
+  transform: translateY(-100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-thumb:hover .img-overlay::before {
+  transform: translateY(0);
 }
 
 .card-content {
