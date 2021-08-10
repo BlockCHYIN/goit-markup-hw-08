@@ -108,6 +108,7 @@ a {
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
@@ -151,6 +152,7 @@ a {
 .contacts-link:focus,
 .contacts-link:hover {
   color: var(--accent-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-mail {
@@ -172,6 +174,7 @@ a {
 .icon-phone:focus,
 .icon-Phone:hover {
   fill: var(--accent-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-phone,
@@ -222,6 +225,15 @@ a {
   align-items: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+}
+
+.hero-button:focus,
+.hero-button:hover {
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section {
@@ -317,10 +329,10 @@ a {
   bottom: 0;
   width: 100%;
   background-color: rgba(47, 48, 58, 0.8);
+  padding: 27px 82px;
 }
 
 .overlay-text {
-  padding: 27px 82px;
   font-weight: bold;
   line-height: 16px;
   text-transform: uppercase;
@@ -402,11 +414,14 @@ a {
 .team-social-link:focus {
   background-color: var(--accent-text-color);
   fill: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-link:hover .icon-link-team,
 .team-social-link:focus .icon-link-team {
   fill: white;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-link svg {
@@ -451,11 +466,14 @@ a {
 .company:hover {
   border-color: var(--accent-text-color);
   fill: var(--accent-text-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company:hover .icon,
 .company:focus .icon {
   fill: var(--accent-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Portfolio-section */
@@ -499,6 +517,9 @@ a {
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 img {
@@ -535,7 +556,7 @@ img {
   overflow: hidden;
 }
 
-.portfolio-thumb::before {
+.img-thumb::before {
   display: inline-block;
   content: "";
   position: absolute;
@@ -564,12 +585,12 @@ img {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
 }
 
-.img-thumb:focus .img-overlay,
-.img-thumb:hover .img-overlay {
+.portfolio-link:focus .img-overlay,
+.portfolio-link:hover .img-overlay {
   transform: translateY(-100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-content {
@@ -587,6 +608,7 @@ img {
 .portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-title {
@@ -656,6 +678,12 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-link a:focus,
+.footer-link a:hover {
+  color: var(--accent-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .join-container {
   width: 206px;
   margin-left: 70px;
@@ -701,6 +729,8 @@ img {
 .icon-link:focus {
   background-color: var(--accent-text-color);
   fill: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Modal */
@@ -714,7 +744,6 @@ img {
   opacity: 1;
   visibility: visible;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -739,7 +768,9 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-button {
