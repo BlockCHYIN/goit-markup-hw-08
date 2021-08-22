@@ -1,0 +1,135 @@
+/* Modal */
+
+.modal {
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  min-width: 528px;
+  min-height: 581px;
+
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__close--button {
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal__icon--close {
+  width: 18px;
+  height: 18px;
+  fill: #000000;
+}
+
+.moda__title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: $secondary-text-color;
+  margin-bottom: 12px;
+}
+
+.modal__field {
+  height: 58px;
+  margin-bottom: 10px;
+}
+
+.modal__label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__text {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: $primary-text-color;
+}
+
+.modal__name {
+  margin-top: 4px;
+  min-height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 50px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__name:focus,
+.modal__name:hover {
+  border-color: $accent-text-color;
+  outline: none;
+}
+
+.modal__field:focus-within .modal-icon {
+  fill: $accent-text-color;
+}
+
+.modal__icon {
+  position: absolute;
+  top: 25px;
+  left: 19px;
+  width: 18px;
+  height: 18px;
+  fill: $secondary-text-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__label--textarea {
+  height: 138px;
+}
+
+.modal__comment {
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.modal__comment::placeholder {
+  position: absolute;
+  left: 0;
+  padding-top: 12px;
+  padding-left: 16px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal__comment:placeholder-shown {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.modal__comment:not(:placeholder-shown) {
+  border-color: $accent-text-color;
+  outline: none;
+}
+
+.modal__comment:hover,
+.modal__comment:focus {
+  border-color: $accent-text-color;
+  outline: none;
+}

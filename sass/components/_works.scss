@@ -1,0 +1,41 @@
+/* Works */
+
+.work__section {
+  padding-top: 0px;
+}
+
+.works {
+  display: flex;
+}
+
+.works > .works__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.works__title {
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: $secondary-text-color;
+}
+
+.work__box {
+  position: relative;
+}
+
+.work__overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+  padding: 27px 82px;
+}
+
+.work__text {
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+}

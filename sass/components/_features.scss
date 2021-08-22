@@ -1,0 +1,36 @@
+/* Features */
+
+.features {
+  display: flex;
+}
+
+.features > .features__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features__icons {
+  background-color: #f5f4fa;
+  padding: 25px 0;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+}
+
+.feature__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.features__title {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $secondary-text-color;
+}
+
+.features__text {
+  line-height: 1.71;
+}

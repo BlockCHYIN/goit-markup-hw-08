@@ -1,0 +1,10 @@
+/* Header */
+
+.header {
+  display: flex;
+  align-items: center;
+
+  &__page {
+    border-bottom: 1px solid #eeeeee;
+  }
+}
