@@ -81,19 +81,18 @@
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+}
+.portfolio__title {
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
 
-  &__title {
-    margin-bottom: 4px;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: $secondary-text-color;
-  }
-
-  &__text {
-    font-size: 16px;
-    line-height: 1.87;
-    color: $primary-text-color;
-  }
+.portfolio__text {
+  font-size: 16px;
+  line-height: 1.87;
+  color: #757575;
 }

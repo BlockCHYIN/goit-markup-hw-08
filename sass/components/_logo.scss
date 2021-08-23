@@ -1,6 +1,11 @@
 .logo {
   display: flex;
 
+  &__text {
+    color: #2196f3;
+    outline: none;
+  }
+
   &__link {
     display: flex;
     padding-top: 24px;
@@ -12,8 +17,4 @@
     color: #000000;
     outline: none;
   }
-}
-logo__text {
-  color: #2196f3;
-  outline: none;
 }

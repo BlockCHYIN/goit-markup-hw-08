@@ -66,6 +66,11 @@ body {
   display: flex;
 }
 
+.logo__text {
+  color: #2196f3;
+  outline: none;
+}
+
 .logo__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -77,11 +82,6 @@ body {
   font-size: 26px;
   line-height: 1.19;
   color: #000000;
-  outline: none;
-}
-
-logo__text {
-  color: #2196f3;
   outline: none;
 }
 
@@ -334,7 +334,7 @@ logo__text {
   border-right: 1px solid #eeeeee;
 }
 
-.portfolio__content__title {
+.portfolio__title {
   margin-bottom: 4px;
   font-weight: bold;
   font-size: 18px;
@@ -343,7 +343,7 @@ logo__text {
   color: #212121;
 }
 
-.portfolio__content__text {
+.portfolio__text {
   font-size: 16px;
   line-height: 1.87;
   color: #757575;

@@ -1,4 +1,24 @@
-/* Modal */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, 50%) scale(1.1);
+}
 
 .modal {
   padding: 40px;
@@ -18,7 +38,7 @@
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__close--button {
+.close-button {
   display: flex;
   align-items: center;
   width: 30px;
@@ -32,40 +52,40 @@
   cursor: pointer;
 }
 
-.modal__icon--close {
+.icon-close {
   width: 18px;
   height: 18px;
   fill: #000000;
 }
 
-.moda__title {
+.modal-title {
   font-weight: bold;
   font-size: 20px;
   line-height: 23px;
   text-align: center;
-  color: $secondary-text-color;
+  color: #212121;
   margin-bottom: 12px;
 }
 
-.modal__field {
+.modal-field {
   height: 58px;
   margin-bottom: 10px;
 }
 
-.modal__label {
+.form-modal-label {
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
-.modal__text {
+.label {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: $primary-text-color;
 }
 
-.modal__name {
+.modal-label {
   margin-top: 4px;
   min-height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -75,17 +95,17 @@
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__name:focus,
-.modal__name:hover {
+.modal-label:focus,
+.modal-label:hover {
   border-color: $accent-text-color;
   outline: none;
 }
 
-.modal__field:focus-within .modal-icon {
+.modal-field:focus-within .modal-icon {
   fill: $accent-text-color;
 }
 
-.modal__icon {
+.modal-icon {
   position: absolute;
   top: 25px;
   left: 19px;
@@ -95,11 +115,11 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__label--textarea {
+.textarea {
   height: 138px;
 }
 
-.modal__comment {
+.comment {
   width: 448px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -107,7 +127,7 @@
   border-radius: 4px;
 }
 
-.modal__comment::placeholder {
+.comment::placeholder {
   position: absolute;
   left: 0;
   padding-top: 12px;
@@ -119,17 +139,101 @@
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal__comment:placeholder-shown {
+.comment:placeholder-shown {
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
-.modal__comment:not(:placeholder-shown) {
+.comment:not(:placeholder-shown) {
   border-color: $accent-text-color;
   outline: none;
 }
 
-.modal__comment:hover,
-.modal__comment:focus {
+.comment:hover,
+.comment:focus {
   border-color: $accent-text-color;
+  outline: none;
+}
+
+.policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+.checkbox {
+  /* appearance: none; */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox-icon {
+  display: block;
+  width: 16px;
+  height: 15px;
+  background: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  border: 2px solid $secondary-text-color;
+  margin-right: 7px;
+}
+
+.checkbox:checked + .checkbox-icon {
+  border-color: transparent;
+  background-color: $accent-text-color;
+  background-image: url(/./image/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.modal-policy {
+  margin-left: 7px;
+
+  color: $primary-text-color;
+}
+
+.policy-link {
+  text-decoration-line: underline;
+
+  color: #2196f3;
+}
+
+.modal-send {
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+}
+.modal-send:focus,
+.modal-send:hover {
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   outline: none;
 }
