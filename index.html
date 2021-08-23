@@ -24,7 +24,7 @@
       <div class="container header">
         <nav class="logo">
           <a href="" class="logo__link"
-            ><span class="logo___text">Web</span>Studio</a
+            ><span class="logo__text">Web</span>Studio</a
           >
 
           <ul class="nav">
@@ -446,64 +446,65 @@
       </div>
     </footer>
 
+
           <div  data-modal class="backdrop is-hidden">
       <div class="modal">
-        <button type="button" class="modal__close--button" data-modal-close>
-          <svg class="modal__icon--close">
+        <button type="button" class="close-button" data-modal-close>
+          <svg class="icon-close">
 <use href="./image/symbol-defs.svg#icon-close"></use>
           </svg>
           </button>
 
 
-          <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
-          <form action="#" class="modal__form">
-            <div class="modal__field">
-            <label class="modal__label">
-              <span class="modal__text">Имя</span>
-              <input type="text" name="name" class="modal__name" >
-                <svg class="modal__icon">
+          <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+          <form action="#" class="form-modal">
+            <div class="modal-field">
+            <label class="form-modal-label">
+              <span class="label">Имя</span>
+              <input type="text" name="name" class="modal-label" >
+                <svg class="modal-icon">
                   <use href="./image/symbol-defs.svg#icon-person-black"></use>
                 </svg>
               </input>
             </label>
           </div>
 
-          <div class="modal__field">
-            <label class="modal__label">
-              <span class="modal__text">Телефон</span>
-              <input type="tel" name="tel" class="modal__name">
-                <svg class="modal__icon">
+          <div class="modal-field">
+            <label class="form-modal-label">
+              <span class="label">Телефон</span>
+              <input type="tel" name="tel" class="modal-label">
+                <svg class="modal-icon">
                   <use href="./image/symbol-defs.svg#icon-phone-black"></use>
                 </svg>
               </input>
             </label>
           </div>
 
-          <div class="modal__field">
-            <label  class="modal__label">
-              <span class="modal__text">Почта</span>
-              <input type="mail" name="E-mail" class="modal__name">
-                <svg class="modal__icon">
+          <div class="modal-field">
+            <label  class="form-modal-label">
+              <span class="label">Почта</span>
+              <input type="mail" name="E-mail" class="modal-label">
+                <svg class="modal-icon">
                   <use href="./image/symbol-defs.svg#icon-email-black"></use>
                 </svg>
               </input>
             </label>
           </div>
         
-          <label class="modal__label--textarea">
+          <label class="form-modal-label textarea">
             <span>Комментарий</span>
-            <textarea name="policy" cols="30" rows="10" class="modal__comment" placeholder="Введите текст"></textarea>
+            <textarea name="policy" cols="30" rows="10" class="comment" placeholder="Введите текст"></textarea>
             </label>
 
-            <!-- <div class="policy"> -->
+ 
               <label class="policy">
-            <input type="checkbox" name="policy" class="policy__checkbox" value>
-            <!-- <span class="checkbox-icon"></span> -->
-          Соглашаюсь с рассылкой и принимаю<a href="#" class="policy__link">Условия договора</a>
+            <input type="checkbox" name="policy" class="checkbox" value>
+            <span class="checkbox-icon"></span>
+          Соглашаюсь с рассылкой и принимаю<a href="#" class="policy-link">Условия договора</a>
           </label>
-          <!-- </div> -->
+          
 
-          <button type="submit" class="policy__send">Отправить</button>
+          <button type="submit" class="modal-send">Отправить</button>
           </form>
       </div>
     </div>
