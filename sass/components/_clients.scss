@@ -1,19 +1,19 @@
 /* Clients */
 
-.clients__title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  color: $secondary-text-color;
-}
+// .section__title {
+//   font-weight: bold;
+//   font-size: 36px;
+//   line-height: 42px;
+//   text-align: center;
+//   color: $secondary-text-color;
+// }
 
-.clients__companies {
+.clients {
   display: flex;
   margin-top: 50px;
 }
 
-.clients__company:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -29,7 +29,7 @@
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__link svg {
+.clients__link .clients__icon {
   width: 106px;
   height: 60px;
   fill: #afb1b8;

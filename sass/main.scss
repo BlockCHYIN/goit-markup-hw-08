@@ -1,5 +1,5 @@
 // Utils
-@import "./utils/viriables/colors";
+@import "./utils/_variables";
 
 // Base
 @import "./base/normalize";
@@ -7,9 +7,12 @@
 // Componets
 @import "./components/header";
 @import "./components/logo";
-@import "./components/nav";
 @import "./components/current";
+@import "./components/nav";
 @import "./components/contacts";
+@import "./components/section__title--visually-hidden";
+@import "./components/filter";
+@import "./components/portfolio";
 @import "./components/hero";
 @import "./components/features";
 @import "./components/works";
