@@ -21,9 +21,14 @@
     <header class="header__page">
       <div class="container header">
         <nav class="logo">
-          <a href="" class="logo__link"
-            ><span class="logo__text">Web</span>Studio</a>
+          <a href="#" class="logo__link"><span class="logo__text">Web</span>Studio</a>
 
+          <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg  aria-label="Переключатель мобильного  меню">
+              <use class="icon-menu" href="./image/symbol-defs.svg#icon-menu_40px"></use>
+              
+            </svg>
+          </button>
 
 
           <ul class="nav">
@@ -442,17 +447,64 @@
           <input type="email" name="mail" id="mail" class="form__field" placeholder="E-mail">
         </label>
      
-      <!-- <div class="form__button"> -->
+      <div class="form__button">
         <button type="submit" class="form__button">Подписаться
           <svg class="form__icon">
             <use href="./image/symbol-defs.svg#icon-icon-send"></use>
           </svg>
         </button>
-      <!-- </div> -->
+       </div>
       </form>
     </div>
       </div>
-    </footer>
+    </footer> 
+
+
+    <div class="menu-container js-menu-container"  id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+<svg>
+  <use class="icon-cross" href="./image/symbol-defs.svg#icon-close_40px"></use>
+</svg>
+      </button>
+
+         <!-- <ul class="mobile-menu__nav">
+            <li class="mobile-menu__nav-item">
+              <a href="" class="mobile-menu__nav-link">Студия</a>
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a href="./portfolio.html" class="mobile-menu__nav-link">Портфолио</a>
+            </li>
+            <li class="mobile-menu__nav__item"><a href="" class="mobile-menu__nav-link">Контакты</a></li>
+          </ul>
+        </nav> -->
+
+
+        <!-- <ul class="mobile-menu-contacts">
+          <li class="mobile-menu__contacts-item">
+            <a href="mailto:info@devstudio.com" class="mobile-menu__contacts-link"> -->
+              <!-- <svg class="contacts__icon" width= "16px" height= "12px">
+                <use href=./image/symbol-defs.svg#icon-mail></use>
+              </svg>  -->
+              <!-- info@devstudio.com</a
+            > -->
+          <!-- </li>
+          <li class="mobile-menu__contacts__item">
+            <a href="tel:+380961111111" class="mobile-menu__contacts-link">
+              <!-- <svg class="contacts__icon" width= "10px" height= "16px"> -->
+                <!-- <use href="./image/symbol-defs.svg#icon-Phone"></use>
+              </svg> -->
+              <!-- +38 096 111 11 11</a
+            >
+          </li>
+        <!-- </ul> --> 
+
+        <!-- <ul class="mobile-menu__set">
+          <li class="mobile-menu__item"><a class="mobile_menu__link" href="#">Instagram</a></li>
+          <li class="mobile-menu__item"><a class="mobile_menu__link" href="#">Twitter</a></li>
+          <li class="mobile-menu__item"><a class="mobile_menu__link" href="#">Facebook</a></li>
+          <li class="mobile-menu__item"><a class="mobile_menu__link" href="#">LinkedIn</a></li>
+        </ul> -->
+    </div>
 
 
           <div  data-modal class="backdrop is-hidden">
@@ -517,6 +569,17 @@
       </div>
     </div>
    
+
+
+      <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+
+
      <script src="./js/modal.js"></script>
   </body>
 </html>
