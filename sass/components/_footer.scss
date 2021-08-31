@@ -5,6 +5,12 @@
   padding-bottom: 60px;
 }
 
+@media screen and (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+}
+
 .footer__website {
   display: block;
   /* margin-bottom: 20px; */
@@ -17,7 +23,7 @@
 }
 
 .footer__container {
-  display: flex;
+  // display: flex;
   align-items: baseline;
 }
 

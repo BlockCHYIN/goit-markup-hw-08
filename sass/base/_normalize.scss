@@ -306,15 +306,21 @@ body {
 }
 
 /* Container*/
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1200px;
-}
+// .container {
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   width: 1200px;
+// }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+// .section {
+//   // padding-top: 94px;
+//   // padding-bottom: 94px;
+// }
+
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
 }

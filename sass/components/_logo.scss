@@ -1,5 +1,8 @@
 .logo {
-  display: flex;
+  @media screen and (min-width: $mobile) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 
   &__text {
     color: #2196f3;
@@ -7,14 +10,26 @@
   }
 
   &__link {
-    display: flex;
-    padding-top: 24px;
-    padding-bottom: 25px;
     font-family: Raleway;
     font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.16;
+
     color: #000000;
     outline: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    font-size: 26px;
+    line-height: 1.19;
   }
 }

@@ -1,10 +1,13 @@
 /* Header */
 
 .header {
-  display: flex;
-  align-items: center;
-
   &__page {
+    position: relative;
     border-bottom: 1px solid #eeeeee;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
   }
 }

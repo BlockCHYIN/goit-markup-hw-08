@@ -4,21 +4,26 @@
 }
 
 .section__title {
-  margin-bottom: 50px;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  color: $secondary-text-color;
+  @media screen and (min-width: $mobile) {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    color: $secondary-text-color;
+  }
+  // margin-bottom: 50px;
+
+  // font-size: 36px;
+  // line-height: 1.16;
 }
 
-.team {
-  display: flex;
-}
+// .team {
+//   display: flex;
+// }
 
-.team > .team__item:not(:last-child) {
-  margin-right: 30px;
-}
+// .team > .team__item:not(:last-child) {
+//   margin-right: 30px;
+// }
 
 .team__box {
   margin-top: -8px;
