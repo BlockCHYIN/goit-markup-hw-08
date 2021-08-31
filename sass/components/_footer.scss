@@ -1,14 +1,9 @@
 /* Footer */
+
 .footer {
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-@media screen and (max-width: 767px) {
-  .footer {
-    text-align: center;
-  }
 }
 
 .footer__website {
@@ -23,8 +18,13 @@
 }
 
 .footer__container {
+  @media screen and (max-width: 767px) {
+    .footer {
+      text-align: center;
+    }
+  }
   // display: flex;
-  align-items: baseline;
+  // align-items: baseline;
 }
 
 .footer__logo {
