@@ -1,4 +1,6 @@
 .container {
+  min-width: 320px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -18,7 +20,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .nav. &__item .contacts {
+  .nav .nav__item .contacts {
     display: none;
   }
 }

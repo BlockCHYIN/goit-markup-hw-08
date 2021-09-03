@@ -6,13 +6,16 @@
 
 .menu-toggle {
   position: absolute;
-  top: 0;
-  right: 0;
-  min-height: 40px;
-  min-width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  top: 16px;
+  right: 16px;
   margin: 0;
   padding: 0;
   border: none;
@@ -20,33 +23,43 @@
   cursor: pointer;
   border-radius: 50%;
   outline: none;
+z-index: 999; 
 
-  & .icon-cross {
-    display: none;
-  }
 
-  &.is-open .icon-cross {
-    display: block;
-  }
-
-  &.is-open .icon-menu {
-    display: none;
-  }
+&:hover
+&:hover {
+  fill: $accent-text-color;
+}
 }
 
+  @media screen and (min-width: 767px) {
+    .menu-toggle {
+  display: none; 
+    }
+  
+}
+
+
+
 .menu-container {
+background: #FFFFFF;
+z-index: 998;
+
+@media screen and (max-width: 767px) {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding: 48px 40px;
   text-align: center;
   font-size: 20px;
-  background-color: #3f51b5;
-  z-index: 999;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  
 
   transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
   &.is-open {
     transform: translateX(0);

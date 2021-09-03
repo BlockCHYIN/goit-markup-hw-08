@@ -25,6 +25,13 @@
 //   margin-right: 30px;
 // }
 
+.team__item {
+@media screen and (max-widht: 767px) { 
+    width: 450px;
+    height: 460px; 
+}
+} 
+
 .team__box {
   margin-top: -8px;
   padding-top: 30px;
@@ -33,6 +40,10 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+  }
 }
 
 .team__title {
