@@ -21,12 +21,11 @@
     <header class="header__page">
       <div class="container header">
         <nav class="logo">
-          <a href="#" class="logo__link"><span class="logo__text">Web</span>Studio</a>
+          <a href="#" class="logo__link--text"><span class="logo__text">Web</span>Studio</a>
 
           <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-            <svg  aria-label="Переключатель мобильного  меню">
-              <use class="icon-menu" href="./image/symbol-defs.svg#icon-menu_40px"></use>
-              
+            <svg  aria-label="Переключатель мобильного  меню" width="40" height="40">
+              <use class="icon-menu" href="./image/symbol-defs.svg#icon-menu_40px"></use> 
             </svg>
           </button>
 
@@ -41,6 +40,7 @@
             <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
           </ul>
         </nav>
+
         <ul class="contacts">
           <li class="contacts__item">
             <a href="mailto:info@devstudio.com" class="contacts__link">
@@ -59,7 +59,10 @@
             >
           </li>
         </ul>
-      </div>
+
+      
+        
+      </div> 
       </section>
     </header>
 
@@ -176,7 +179,11 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
-              <img src="./image/фото1.webp" alt="Игорь" width="270" />
+<img src="./image/фото1.webp" alt="Игорь"
+            source srcset="./image/Igor-mob.jpg, ./image/Igor-mob@2x.jpg 2x"
+            media="(max-width: 767px)" width="450px" height="460px"
+            source srcset="./image/Igor-tab.jpg, ./image/Igor-tab2@.jpg 2x"
+            media="(min-width: 768px) and (max-width: 1199px)"  width="354px" height="374px"/>
               <div class="team__box">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -459,52 +466,49 @@
       </div>
     </footer> 
 
-
-    <div class="menu-container js-menu-container"  id="mobile-menu">
+             <div class="menu-container js-menu-container"  id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-<svg>
+<svg width="24" height="18">
   <use class="icon-cross" href="./image/symbol-defs.svg#icon-close_40px"></use>
 </svg>
-      </button>
-
-         <!-- <ul class="mobile-menu__nav">
+      </button> 
+ 
+          <ul class="mobile-menu__nav">
             <li class="mobile-menu__nav-item">
-              <a href="" class="mobile-menu__nav-link">Студия</a>
+              <a href="./index.html" class="mobile-menu__nav-link">Студия</a>
             </li>
             <li class="mobile-menu__nav-item">
               <a href="./portfolio.html" class="mobile-menu__nav-link">Портфолио</a>
             </li>
-            <li class="mobile-menu__nav__item"><a href="" class="mobile-menu__nav-link">Контакты</a></li>
+            <li class="mobile-menu__nav-item"><a href="#" class="mobile-menu__nav-link">Контакты</a></li>
           </ul>
-        </nav> -->
+        </nav>-
 
-
-        <!-- <ul class="mobile-menu-contacts">
+         <ul class="mobile-menu__contacts">
           <li class="mobile-menu__contacts-item">
-            <a href="mailto:info@devstudio.com" class="mobile-menu__contacts-link"> -->
-              <!-- <svg class="contacts__icon" width= "16px" height= "12px">
+            <a href="mailto:info@devstudio.com" class="mobile-menu__contacts-link">
+             <svg class="contacts__icon" width= "16px" height= "12px">
                 <use href=./image/symbol-defs.svg#icon-mail></use>
-              </svg>  -->
-              <!-- info@devstudio.com</a
-            > -->
-          <!-- </li>
-          <li class="mobile-menu__contacts__item">
+              </svg> 
+              info@devstudio.com</a>
+         </li>
+          <li class="mobile-menu__contacts-item">
             <a href="tel:+380961111111" class="mobile-menu__contacts-link">
-              <!-- <svg class="contacts__icon" width= "10px" height= "16px"> -->
-                <!-- <use href="./image/symbol-defs.svg#icon-Phone"></use>
-              </svg> -->
-              <!-- +38 096 111 11 11</a
-            >
+               <svg class="contacts__icon" width= "10px" height= "16px">
+                <use href="./image/symbol-defs.svg#icon-Phone"></use>
+               </svg>
+              +38 096 111 11 11</a>
           </li>
-        <!-- </ul> --> 
+         </ul> 
 
-        <!-- <ul class="mobile-menu__set">
-          <li class="mobile-menu__item"><a class="mobile_menu__link" href="#">Instagram</a></li>
-          <li class="mobile-menu__item"><a class="mobile_menu__link" href="#">Twitter</a></li>
-          <li class="mobile-menu__item"><a class="mobile_menu__link" href="#">Facebook</a></li>
-          <li class="mobile-menu__item"><a class="mobile_menu__link" href="#">LinkedIn</a></li>
-        </ul> -->
-    </div>
+        <ul class="mobile-menu__set">
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Instagram</a></li>
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Twitter</a></li>
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Facebook</a></li>
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    
 
 
           <div  data-modal class="backdrop is-hidden">
