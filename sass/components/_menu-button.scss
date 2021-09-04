@@ -1,5 +1,5 @@
 @media screen and (max-width: 767px) {
-  .nav {
+  .menu-toggle {
     display: none;
   }
 }
@@ -23,7 +23,7 @@
   cursor: pointer;
   border-radius: 50%;
   outline: none;
-z-index: 999; 
+z-index: 4; 
 
 
 &:hover
@@ -64,4 +64,9 @@ z-index: 998;
   &.is-open {
     transform: translateX(0);
   }
+
+  
+@media screen and (min-width: 768px) {
+position: fixed;
+}
 }

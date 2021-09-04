@@ -14,9 +14,13 @@
   font-style: normal;
 }
 
-// .address__link:not(:last-child) {
+@media screen and (min-width: 320px) {
+   .address__link:not(:last-child) {
+     margin-bottom: 8px;
 //   margin-bottom: 9px;
-// }
+ }
+}
+
 
 .address__link .address__link--link {
   font-size: 14px;

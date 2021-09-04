@@ -1,15 +1,15 @@
 .logo {
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: $mobile) {}
     padding-top: 16px;
     padding-bottom: 16px;
-  }
-
-  &__text {
+  
+}
+  .logo__text {
     color: #2196f3;
     outline: none;
   }
 
-  &__link--text {
+  .logo__link--text {
     font-family: Raleway;
     font-weight: bold;
     font-size: 24px;
@@ -19,16 +19,27 @@
     outline: none;
   }
 
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    padding-top: 26px;
-    padding-bottom: 26px;
+  .logo {
+    @media screen and (min-width: $tablet) {
+    display: flex; 
   }
+  }
+  
 
-  @media screen and (min-width: $desktop) {
+ 
+
+.logo__link--text {
+  @media screen and (min-width: $tablet) and (max-widht: 1199px) {}
+    margin-right: 88px;
+    padding: 26px 0;
+  
+}
+
+.logo__link--text {
+ @media screen and (min-width: $desktop) {
     padding-top: 24px;
     padding-bottom: 25px;
-
+  margin-right: 93px;
     font-size: 26px;
     line-height: 1.19;
   }

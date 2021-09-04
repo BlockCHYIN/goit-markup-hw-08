@@ -1,7 +1,11 @@
 /* Form Mail */
-// .form {
-//   margin-left: 93px;
-// }
+.form {
+  @media screen and (min-width:320px) and (max-widht:767px) {
+   
+    }
+  margin-top: 60px;
+  // margin-left: 93px;
+ }
 
 .form__title {
   font-family: Roboto;
@@ -13,6 +17,7 @@
   text-transform: uppercase;
 
   color: #ffffff;
+  
   margin-bottom: 20px;
 }
 
@@ -63,10 +68,13 @@
   align-items: center;
   letter-spacing: 0.06em;
   color: #ffffff;
-
-  padding: 10px 0 10px 29px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 29px;
   width: 200px;
   height: 50px;
+  margin-top: 30px;
 }
 
 .form__button:focus,
