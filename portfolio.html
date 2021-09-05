@@ -10,59 +10,76 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-   
+
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Портфолио</title>
   </head>
   <body>
-
-      <!--Шапка сайта-->
-      <section class="header-block">
+    <!--Шапка сайта-->
     <header class="header__page">
       <div class="container header">
-        <nav class="logo">
-          <a href="" class="logo__link"
+        <div class="logo">
+          <a href="#" class="logo__link--text"
             ><span class="logo__text">Web</span>Studio</a
           >
 
+          <button
+            type="button"
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              aria-label="Переключатель мобильного  меню"
+              width="40"
+              height="40"
+            >
+              <use
+                class="icon-menu"
+                href="./image/symbol-defs.svg#icon-menu_40px"
+              ></use>
+            </svg>
+          </button>
+
           <ul class="nav">
             <li class="nav__item">
-              <a href="./index.html" class="nav__link ">Студия</a>
+              <a href="./index.html" class="nav__link nav__link">Студия</a>
             </li>
             <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link nav__link--current">Портфолио</a>
+              <a href="./portfolio.html" class="nav__link--current">Портфолио</a>
             </li>
             <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
           </ul>
-        </nav>
+        </div>
+
         <ul class="contacts">
           <li class="contacts__item">
             <a href="mailto:info@devstudio.com" class="contacts__link">
-              <svg class="contacts__icon" width= "16px" height= "12px">
-                <use href=./image/symbol-defs.svg#icon-mail></use>
-              </svg> 
+              <svg class="contacts__icon" width="16px" height="12px">
+                <use href="./image/symbol-defs.svg#icon-mail"></use>
+              </svg>
               info@devstudio.com</a
             >
           </li>
           <li class="contacts__item">
             <a href="tel:+380961111111" class="contacts__link">
-              <svg class="contacts__icon" width= "10px" height= "16px">
+              <svg class="contacts__icon" width="10px" height="16px">
                 <use href="./image/symbol-defs.svg#icon-Phone"></use>
               </svg>
               +38 096 111 11 11</a
             >
           </li>
         </ul>
+        </div>
       </div>
-      </section>
     </header>
-
-
     <!-- Main -->
     <main>
       <section class="section">
         <div class="container">
-          <h1 class="section-title section__title--visually-hidden">Portfolio</h1>
+          <h1 class="section-title section__title--visually-hidden">
+            Portfolio
+          </h1>
           <!-- Filters -->
 
           <ul class="filter">
@@ -84,40 +101,45 @@
           </ul>
 
           <div class="container">
-          <ul class="portfolio">
-            <li class="portfolio__item">
-              <a href="" class="portfolio__link">
-                <div class="porfolio__thumb">
-                  <img
-                    src="./image/img.webp"
-                    alt="Ноутбук с контактами разработчиков"
-                    width="370"
-                    height="294"
-                  />
-                  <div class="porfolio__overlay">
-                    <p>
-                      Технокряк это современная площадка распространения
-                      коронавируса. Компании используют эту платформу для
-                      цифрового шпионажа и атак на защищённые сервера
-                      конкурентов.
-                    </p>
-                  </div>
-                </div>
-                <div class="portfolio__content">
-                  <h3 class="portfolio__title">Технокряк</h3>
-                  <p class="portfolio__text">Веб-сайт</p>
-                </div>
-              </a>
-            </li>
-            <li class="portfolio__item">
-              
+            <ul class="portfolio">
+              <li class="portfolio__item">
                 <a href="" class="portfolio__link">
                   <div class="porfolio__thumb">
                     <img
-                      src="./image/img(1).webp"
+                      srcset="
+                        ./image/portfolio/noute-450.jpg 450w,
+                        ./image/portfolio/noute-900.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                      src="./image/portfolio/noute-450.jpg"
+                      alt="Ноутбук с контактами разработчиков"
+                    />
+                    <div class="porfolio__overlay">
+                      <p>
+                        Технокряк это современная площадка распространения
+                        коронавируса. Компании используют эту платформу для
+                        цифрового шпионажа и атак на защищённые сервера
+                        конкурентов.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="portfolio__content">
+                    <h3 class="portfolio__title">Технокряк</h3>
+                    <p class="portfolio__text">Веб-сайт</p>
+                  </div>
+                </a>
+              </li>
+              <li class="portfolio__item">
+                <a href="" class="portfolio__link">
+                  <div class="porfolio__thumb">
+                    <img
+                      srcset="
+                        ./image/portfolio/basketbol-450.jpg 450w,
+                        ./image/portfolio/basketbol-900.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                      src="./image/portfolio/basketbol-450.jpg"
                       alt="Два баскетболиста с мячом"
-                      width="370"
-                      height="294"
                     />
 
                     <div class="porfolio__overlay">
@@ -136,17 +158,18 @@
                     <p class="portfolio__text">Дизайн</p>
                   </div>
                 </a>
-             
-            </li>
-            <li class="portfolio__item">
-              
+              </li>
+              <li class="portfolio__item">
                 <a href="" class="portfolio__link">
                   <div class="porfolio__thumb">
                     <img
-                      src="./image/img(2).webp"
+                      srcset="
+                        ./image/portfolio/shark-450.jpg 450w,
+                        ./image/portfolio/shark-900.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                      src="./image/portfolio/shark-450.jpg"
                       alt="Эмблема ресторана акула"
-                      width="370"
-                      height="294"
                     />
 
                     <div class="porfolio__overlay">
@@ -163,17 +186,18 @@
                     <p class="portfolio__text">Приложение</p>
                   </div>
                 </a>
-             
-            </li>
-            <li class="portfolio__item">
-            
+              </li>
+              <li class="portfolio__item">
                 <a href="" class="portfolio__link">
                   <div class="porfolio__thumb">
                     <img
-                      src="./image/img(3).webp"
+                      srcset="
+                        ./image/portfolio/headphones-450.jpg 450w,
+                        ./image/portfolio/headphones-900.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                      src="./image/portfolio/headphones-450.jpg"
                       alt=" Наушники"
-                      width="370"
-                      height="294"
                     />
 
                     <div class="porfolio__overlay">
@@ -190,17 +214,18 @@
                     <p class="portfolio__text">Маркетинг</p>
                   </div>
                 </a>
-             
-            </li>
-            <li class="portfolio__item">
-              
+              </li>
+              <li class="portfolio__item">
                 <a href="" class="portfolio__link">
                   <div class="porfolio__thumb">
                     <img
-                      src="./image/img(4).webp"
+                      srcset="
+                        ./image/portfolio/box-450.jpg 450w,
+                        ./image/portfolio/box-900.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                      src="./image/portfolio/box-450.jpg"
                       alt="Две коробки"
-                      width="370"
-                      height="294"
                     />
 
                     <div class="porfolio__overlay">
@@ -217,17 +242,18 @@
                     <p class="portfolio__text">Приложение</p>
                   </div>
                 </a>
-              
-            </li>
-            <li class="portfolio__item">
-              
+              </li>
+              <li class="portfolio__item">
                 <a href="" class="portfolio__link">
                   <div class="porfolio__thumb">
                     <img
-                      src="./image/img(5).webp"
+                      srcset="
+                        ./image/portfolio/desktop-450.jpg 450w,
+                        ./image/portfolio/desktop-900.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                      src="./image/portfolio/desktop-450.jpg"
                       alt="Монитор Мака"
-                      width="370"
-                      height="294"
                     />
 
                     <div class="porfolio__overlay">
@@ -242,17 +268,18 @@
                     <p class="portfolio__text">Веб-сайт</p>
                   </div>
                 </a>
-             
-            </li>
-            <li class="portfolio__item">
-              
+              </li>
+              <li class="portfolio__item">
                 <a href="" class="portfolio__link">
                   <div class="porfolio__thumb">
                     <img
-                      src="./image/img(6).webp"
+                      srcset="
+                        ./image/portfolio/magazine-450.jpg 450w,
+                        ./image/portfolio/magazine-900.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                      src="./image/portfolio/magazine-450.jpg"
                       alt="Открытый журнал"
-                      width="370"
-                      height="294"
                     />
 
                     <div class="porfolio__overlay">
@@ -269,17 +296,18 @@
                     <p class="portfolio__text">Дизайн</p>
                   </div>
                 </a>
-             
-            </li>
-            <li class="portfolio__item">
-              
+              </li>
+              <li class="portfolio__item">
                 <a href="" class="portfolio__link">
                   <div class="porfolio__thumb">
                     <img
-                      src="./image/img(7).webp"
+                      srcset="
+                        ./image/portfolio/logotip-450.jpg 450w,
+                        ./image/portfolio/logotip-900.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                      src="./image/portfolio/logotip-450.jpg"
                       alt="Эмблема на веревке"
-                      width="370"
-                      height="294"
                     />
 
                     <div class="porfolio__overlay">
@@ -296,17 +324,18 @@
                     <p class="portfolio__text">Маркетинг</p>
                   </div>
                 </a>
-             
-            </li>
-            <li class="portfolio__item">
-              
+              </li>
+              <li class="portfolio__item">
                 <a href="" class="portfolio__link">
                   <div class="porfolio__thumb">
                     <img
-                      src="./image/img(8).webp"
+                      srcset="
+                        ./image/portfolio/noutbook-450.jpg 450w,
+                        ./image/portfolio/noutbook-900.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                      src="./image/portfolio/noutbook-450.jpg"
                       alt="Человек работающий на ноутбуке"
-                      width="370"
-                      height="294"
                     />
 
                     <div class="porfolio__overlay">
@@ -323,9 +352,8 @@
                     <p class="portfolio__text">Приложение</p>
                   </div>
                 </a>
-             
-            </li>
-          </ul>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -333,78 +361,161 @@
 
     <!--Футер-->
     <footer class="footer">
-     
       <div class="container footer__container">
-        <div class="footer__section">
-        <a href="" class="footer__website"
-          ><span class="footer__logo">Web</span>Studio</a
-        >
-        <address class="address">
-          <ul class="address__main">
-            <li class="address__item">г. Киев, пр-т Леси Украинки, 26</li>
-            <li class="address__link">
-              <a href="mailto:info@devstudio.com" class="address__link--link">info@devstudio.com</a>
-            </li>
-            <li class="address__link">
-              <a href="tel:+380961111111" class="address__link--link">+38 096 111 11 11</a>
-            </li>
-          </ul>
-        </address>
-      </div>
+        <div class="footer__container--unity">
+          <div class="footer__section">
+            <a href="" class="footer__website"
+              ><span class="footer__logo">Web</span>Studio</a
+            >
+            <address class="address">
+              <ul class="address__main">
+                <li class="address__item">г. Киев, пр-т Леси Украинки, 26</li>
+                <li class="address__link">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="address__link--link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="address__link">
+                  <a href="tel:+380961111111" class="address__link--link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
 
-             <div class="join__container">
-      <h3 class="join__title">Присоединяйтесь</h3>
-        <ul class=" join__links">
-          <li class="join__link">
-            <a href="#" class="join__icon">
-                <svg class="join__image">
-                  <use href="./image/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-            </a>
-          </li>
-          <li class="join__link">
-            <a href="#" class="join__icon">
-                <svg class="join__image">
-                  <use href="./image/symbol-defs.svg#icon-Twitter"></use>
-                </svg>
-            </a>
-          </li>
-          <li class="join__link">
-            <a href="#" class="join__icon">
-                <svg class="join__image">
-                  <use href="./image/symbol-defs.svg#icon-Facebook"></use>
-                </svg>
-            </a>
-          </li>
-          <li class="join__link">
-            <a href="#" class="join__icon">
-                <svg class="join__image">
-                  <use href="./image/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-            </a>
-          </li>
-        </ul>
-      
-    </div>
+          <div class="join__container--join">
+            <h3 class="join__title">Присоединяйтесь</h3>
+            <ul class="join__links">
+              <li class="join__link">
+                <a href="#" class="join__icon">
+                  <svg class="join__image">
+                    <use href="./image/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join__link">
+                <a href="#" class="join__icon">
+                  <svg class="join__image">
+                    <use href="./image/symbol-defs.svg#icon-Twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join__link">
+                <a href="#" class="join__icon">
+                  <svg class="join__image">
+                    <use href="./image/symbol-defs.svg#icon-Facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join__link">
+                <a href="#" class="join__icon">
+                  <svg class="join__image">
+                    <use href="./image/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
+        <div class="form">
+          <h2 class="form__title">Подпишитесь на рассылку</h2>
+          <form action="#" class="form__box">
+            <label for="mail" class="form__label">
+              <input
+                type="email"
+                name="mail"
+                id="mail"
+                class="form__field"
+                placeholder="E-mail"
+              />
+            </label>
 
-    <div class="form">
-      <h2 class="form__title">Подпишитесь на рассылку</h2>
-      <form action="#" class="form__box">  
-        <label for="mail" class="form__label">
-          <input type="email" name="mail" id="mail" class="form__field" placeholder="E-mail">
-        </label>
-     
-    
-        <button type="submit" class="form__button">Подписаться
-          <svg class="form__icon">
-            <use href="./image/symbol-defs.svg#icon-icon-send"></use>
-          </svg>
-        </button>
-     
-      </form>
-    </div>
+            <!-- <div class="form__button"> -->
+            <button type="submit" class="form__button">
+              Подписаться
+              <svg class="form__icon">
+                <use href="./image/symbol-defs.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+            <!-- </div> -->
+          </form>
+        </div>
       </div>
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="24" height="18">
+          <use
+            class="icon-cross"
+            href="./image/symbol-defs.svg#icon-close_40px"
+          ></use>
+        </svg>
+      </button>
+      <nav>
+        <ul class="mobile-menu__nav">
+          <li class="mobile-menu__nav-item">
+            <a href="./index.html" class="mobile-menu__nav-link">Студия</a>
+          </li>
+          <li class="mobile-menu__nav-item">
+            <a href="./portfolio.html" class="mobile-menu__nav-link"
+              >Портфолио</a
+            >
+          </li>
+          <li class="mobile-menu__nav-item">
+            <a href="#" class="mobile-menu__nav-link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="mobile-menu__contacts">
+        <li class="mobile-menu__contacts-item">
+          <a
+            href="mailto:info@devstudio.com"
+            class="mobile-menu__contacts-link"
+          >
+            <svg class="contacts__icon" width="16px" height="12px">
+              <use href="./image/symbol-defs.svg#icon-mail"></use>
+            </svg>
+            info@devstudio.com</a
+          >
+        </li>
+        <li class="mobile-menu__contacts-item">
+          <a href="tel:+380961111111" class="mobile-menu__contacts-link">
+            <svg class="contacts__icon" width="10px" height="16px">
+              <use href="./image/symbol-defs.svg#icon-Phone"></use>
+            </svg>
+            +38 096 111 11 11</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-menu__set">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#">Instagram</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#">Twitter</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#">Facebook</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
