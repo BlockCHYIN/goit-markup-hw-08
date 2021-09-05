@@ -1,9 +1,11 @@
 /* Form Mail */
 .form {
-  @media screen and (min-width:320px) and (max-widht:767px) {
-   
-    }
-  margin-top: 60px;
+  @media screen and (max-widht: 767px) {
+    margin-top: 60px
+  }
+;
+
+  
   // margin-left: 93px;
  }
 
@@ -21,29 +23,38 @@
   margin-bottom: 20px;
 }
 
-// .form__box {
-//   display: flex;
-// }
+ .form__box {
+  @media screen  and (min-width: 1200px) {
+      display: flex;
+  }
+  }
 
-// .form__label {
-//   margin-right: 12px;
-// }
+.form__label {
+  @media screen  and (min-width: 1200px) {
+    margin-right: 12px;
+  }
+}
 
 .form__field {
-  width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: inherit;
-}
-
-.form__field:focus,
-.form__field:hover {
+  &:focus,
+  &:hover {
   border-color: $accent-text-color;
   outline: none;
 }
+
+@media screen  and (max-width: 1199px) {
+  margin-bottom: 20px;
+}
+}
+
+
 
 .form__field::placeholder {
   font-size: 16px;
@@ -70,11 +81,14 @@
   color: #ffffff;
   margin: 0 auto;
   padding-top: 10px;
-  padding-right: 10px;
+  padding-bottom: 10px;
   padding-left: 29px;
-  width: 200px;
+  min-width: 100px;
   height: 50px;
-  margin-top: 30px;
+
+@media screen and (max-widht: 1199px) {
+  margin-top: 20px;
+  }
 }
 
 .form__button:focus,
