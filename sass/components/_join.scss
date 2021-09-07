@@ -3,6 +3,12 @@
 margin-top: 60px;
 }
 
+  @media screen and (min-widht: 768px) {
+      margin-left: 165px;
+    margin-bottom: 102px;
+}
+
+
  @media screen and (min-width: 1200px) {
     margin-left: 70px;
     display: flex;
