@@ -72,7 +72,6 @@
             >
           </li>
         </ul>
-        </div>
       </div>
     </header>
 
@@ -157,8 +156,14 @@
             <li class="works__item">
               <div class="work__box">
                 <img
-                srcset="./image/Work/work_1-370.jpg 1x, ./image/Work/work_1-740.jpg 2x"
-                 src="./image/Work/work_1-370.jpg" alt="box1" width="370" />
+                  srcset="
+                    ./image/Work/work_1-370.jpg 1x,
+                    ./image/Work/work_1-740.jpg 2x
+                  "
+                  src="./image/Work/work_1-370.jpg"
+                  alt="box1"
+                  width="370"
+                />
                 <div class="work__overlay">
                   <p class="work__text">Десктопные приложения</p>
                 </div>
@@ -168,8 +173,14 @@
             <li class="works__item">
               <div class="work__box">
                 <img
-                srcset="./image/Work/work_2-370.jpg 1x, ./image/Work/work_2-740.jpg 2x"
-                 src="./image/Work/work_2-370.jpg" alt="box1" width="370" />
+                  srcset="
+                    ./image/Work/work_2-370.jpg 1x,
+                    ./image/Work/work_2-740.jpg 2x
+                  "
+                  src="./image/Work/work_2-370.jpg"
+                  alt="box1"
+                  width="370"
+                />
                 <div class="work__overlay">
                   <p class="work__text">Мобильные приложения</p>
                 </div>
@@ -178,9 +189,15 @@
 
             <li class="works__item">
               <div class="work__box">
-               <img
-                srcset="./image/Work/work_3-370.jpg 1x, ./image/Work/work_3-740.jpg 2x"
-                 src="./image/Work/work_3-370.jpg" alt="box1" width="370" />
+                <img
+                  srcset="
+                    ./image/Work/work_3-370.jpg 1x,
+                    ./image/Work/work_3-740.jpg 2x
+                  "
+                  src="./image/Work/work_3-370.jpg"
+                  alt="box1"
+                  width="370"
+                />
                 <div class="work__overlay">
                   <p class="work__text">Дизайнерские решения</p>
                 </div>
@@ -536,58 +553,60 @@
           ></use>
         </svg>
       </button>
-      <nav>
-        <ul class="mobile-menu__nav">
-          <li class="mobile-menu__nav-item">
-            <a href="./index.html" class="mobile-menu__nav-link">Студия</a>
-          </li>
-          <li class="mobile-menu__nav-item">
-            <a href="./portfolio.html" class="mobile-menu__nav-link"
-              >Портфолио</a
+      <div class="mobile-menu__menu--links">
+        <nav>
+          <ul class="mobile-menu__nav">
+            <li class="mobile-menu__nav-item">
+              <a href="./index.html" class="mobile-menu__nav-link">Студия</a>
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a href="./portfolio.html" class="mobile-menu__nav-link"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a href="#" class="mobile-menu__nav-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="mobile-menu__contacts">
+          <li class="mobile-menu__contacts-item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-menu__contacts-link"
+            >
+              <svg class="contacts__icon" width="16px" height="12px">
+                <use href="./image/symbol-defs.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
-          <li class="mobile-menu__nav-item">
-            <a href="#" class="mobile-menu__nav-link">Контакты</a>
+          <li class="mobile-menu__contacts-item">
+            <a href="tel:+380961111111" class="mobile-menu__contacts-link">
+              <svg class="contacts__icon" width="10px" height="16px">
+                <use href="./image/symbol-defs.svg#icon-Phone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
-      </nav>
 
-      <ul class="mobile-menu__contacts">
-        <li class="mobile-menu__contacts-item">
-          <a
-            href="mailto:info@devstudio.com"
-            class="mobile-menu__contacts-link"
-          >
-            <svg class="contacts__icon" width="16px" height="12px">
-              <use href="./image/symbol-defs.svg#icon-mail"></use>
-            </svg>
-            info@devstudio.com</a
-          >
-        </li>
-        <li class="mobile-menu__contacts-item">
-          <a href="tel:+380961111111" class="mobile-menu__contacts-link">
-            <svg class="contacts__icon" width="10px" height="16px">
-              <use href="./image/symbol-defs.svg#icon-Phone"></use>
-            </svg>
-            +38 096 111 11 11</a
-          >
-        </li>
-      </ul>
-
-      <ul class="mobile-menu__set">
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="#">Instagram</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="#">Twitter</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="#">Facebook</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="#">LinkedIn</a>
-        </li>
-      </ul>
+        <ul class="mobile-menu__set">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">Instagram</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">Twitter</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">Facebook</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div data-modal class="backdrop is-hidden">
